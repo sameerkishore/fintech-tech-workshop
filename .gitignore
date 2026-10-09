@@ -1,6 +1,9 @@
 # Large files made on your laptop in Session 4 (too big for GitHub)
 data/generated/
 
+# Your project's Python environment (Python: Create Environment)
+.venv/
+
 # Editor / OS clutter
 .ipynb_checkpoints/
 __pycache__/

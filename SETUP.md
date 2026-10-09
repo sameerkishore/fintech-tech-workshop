@@ -37,6 +37,8 @@ print(sys.version, pandas.__version__)
 
 **4. Restart VS Code** (fully quit and reopen) so it finds Git.
 
+> **Your Python isn't Anaconda?** (e.g. Homebrew on a Mac, or python.org) Give this project its own environment, which is good practice anyway. After you've cloned the workshop files (next section), open the folder in VS Code and run `Cmd/Ctrl+Shift+P` → **Python: Create Environment** → **Venv** → pick your Python → tick **requirements.txt**. Then choose **.venv** as the kernel.
+
 → Now go to [Get the workshop files](#get-the-workshop-files).
 
 ## Route B · No Python yet
@@ -87,6 +89,8 @@ Follow **"Session 3 · Git exercise"** in `README.md`: Use this template → clo
 | `git` is not recognised (Windows) | Fully quit and reopen VS Code after installing Git. Still failing? Re-run the Git installer with defaults. |
 | `xcrun: error: invalid active developer path` (Mac) | Run `xcode-select --install` in Terminal. |
 | VS Code doesn't list Anaconda in *Select Kernel* | `Ctrl/Cmd+Shift+P` → **Python: Select Interpreter** → **Enter interpreter path**. Usually `C:\Users\<you>\anaconda3\python.exe` (Windows) or `/opt/anaconda3/bin/python` or `~/anaconda3/bin/python` (Mac). Then reload the window. |
+| *"Running cells with 'Python 3.x' requires the ipykernel package"*, and **Install** fails or nothing changes. Or the setup check shows a path like `/opt/homebrew/...` or `/Library/Developer/CommandLineTools/...` | You've picked a Homebrew or Apple system Python. Don't install packages into those. `Cmd/Ctrl+Shift+P` → **Python: Create Environment** → **Venv** → tick **requirements.txt**, then **Select Kernel → Python Environments → .venv**. (Anaconda users: pick **anaconda3 / base (conda)** instead.) |
+| `error: externally-managed-environment` when installing | Same cause and fix as above: use a `.venv`, don't install into Homebrew's Python. |
 | `ModuleNotFoundError: No module named ...` | In a notebook cell: `%pip install <name>`, then **Restart** the kernel. |
 | `git push` asks for a password | Use the terminal **inside VS Code**, which signs in through your browser. GitHub doesn't accept your account password for Git. You can also sign in via the Accounts icon (bottom-left of VS Code). |
 | `Updates were rejected because the remote contains work...` | Someone pushed first. Run `git pull`, sort out any conflict, then push. |

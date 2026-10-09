@@ -35,7 +35,7 @@ The setup you do here (**Python + VS Code + Git + GitHub**) is the same one you 
    git config --global user.email "the-email-you-used-for-GitHub"
    git config --global pull.rebase false
    ```
-4. **Check your setup.** Open `00_setup_check.ipynb`, choose your Python (see SETUP.md), and run it.
+4. **Check your setup.** Open `00_setup_check.ipynb`, choose your Python (see SETUP.md), and run it. If VS Code says the Python *requires the ipykernel package* and installing doesn't work, see *Common problems* in SETUP.md.
 5. **Make a change.** Fill in the *About me* section at the bottom of this README and save.
 6. **Stage, commit, push**, in the VS Code terminal:
    ```bash
