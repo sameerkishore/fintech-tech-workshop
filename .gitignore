@@ -1,0 +1,9 @@
+# Large files made on your laptop in Session 4 (too big for GitHub)
+data/generated/
+
+# Editor / OS clutter
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+Thumbs.db
+.vscode/

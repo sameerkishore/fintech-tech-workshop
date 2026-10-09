@@ -1,0 +1,9 @@
+# Anaconda already includes everything here except yfinance.
+# Only needed for Codespaces or a plain (non-Anaconda) Python: pip install -r requirements.txt
+pandas
+numpy
+matplotlib
+openpyxl
+pyarrow
+ipykernel
+yfinance
